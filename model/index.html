@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <div class="navContainer">
+        <nav>
+            Placeholder Name
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="content1">
+            <div class="title">
+                <h1>
+                    Sectoral GDP
+                </h1>
+            </div>
+
+            <div class="graphBox">
+                <img src="/model/sample_img.png" alt="">
+            </div>
+        </div>
+        <div class="content2">
+            <div class="contentLeft combinedContent">
+                <div class="title">
+                    <h1>
+                        Local GDP v Natural Gas Prices
+                    </h1>
+                </div>
+    
+                <div class="graphBox">
+                    <img src="/model/sample_img.png" alt="">
+                </div>
+            </div>
+
+            <div class="contentRight combinedContent">
+                <div class="title">
+                    <h1>
+                        Local GDP v Oil Prices
+                    </h1>
+                </div>
+    
+                <div class="graphBox">
+                    <img src="/model/sample_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        d3.select("body").append("svg")
+            .attr("width", 50)
+            .attr("height", 50)
+          .append("circle")
+            .attr("cx", 25)
+            .attr("cy", 25)
+            .attr("r", 20)
+            .style("fill", "purple");
+    </script>
+
+</body>
+</html>

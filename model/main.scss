@@ -1,0 +1,93 @@
+$mainFont: "Montserrat", sans-serif;
+
+*{
+    font-family: $mainFont;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navContainer{
+    background-color: rgb(55, 43, 226);
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+}
+
+nav{
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    padding: 1rem;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content1{
+    background: rgb(233, 231, 231);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+
+    h1{
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+
+    img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+    }
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+    }
+}
+
+.combinedContent{
+    background: rgb(233, 231, 231);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    h1{
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+}
+
+$mediumScreen: 1200px;
+
+@media screen and (min-width: $mediumScreen) {
+    .content2{
+        flex-direction: row;
+        
+    }
+}
